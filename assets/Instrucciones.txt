@@ -1,0 +1,2 @@
+ 
+Este es un juego educativo de preguntas y respuestas donde puedes comprobar tus conocimientos de nuestro Apóstol nacional a las ves que te diviertes. Una vez iniciado el juego tienes 10 preguntas aleatorias que debes responder o pasar. Cada pregunta tiene un valor de 10 puntos y al final verás cuanto obtuviste en total. Suerte :)

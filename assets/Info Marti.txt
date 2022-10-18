@@ -1,0 +1,303 @@
+class Question {
+  final String questionText;
+  final List<Answer> answerList;
+
+  Question(this.questionText, this.answerList);
+}
+
+class Answer {
+  final String answerText;
+  final bool isCorrect;
+
+  Answer(this.answerText, this.isCorrect);
+}
+
+List<Question> getQuestions() {
+  List<Question> list = [];
+
+  list.add(
+    Question('¿Dónde nació José Martí?', [
+      Answer('En la Habana, Cuba ', true),
+      Answer('En La Ciudad de México', false),
+      Answer('En San Juan, Puerto Rico ', false),
+      Answer('En Las Islas Canarias ', false),
+    ]),
+  );
+
+  list.add(
+    Question('El poema La Niña de Guatemala se trata de :', [
+      Answer('Su novia guatemalteca ', false),
+      Answer('Su hija guatemalteca ', false),
+      Answer('Su esposa guatemalteca ', false),
+      Answer('Su estudiante guatemalteca ', true),
+    ]),
+  );
+
+  list.add(
+    Question('¿Cuándo nació José Martí?', [
+      Answer('28 febrero de 1895 ', false),
+      Answer('30 abril de 1935 ', false),
+      Answer('28 enero de 1953 ', false),
+      Answer('28 enero de 1853 ', true),
+    ]),
+  );
+
+  list.add(
+    Question('La letra de versos sencillos se basa en la canción :', [
+      Answer('La vida es un carnaval ', false),
+      Answer('Por una cabeza ', false),
+      Answer('La cucaracha ', false),
+      Answer('Guantanamera ', true),
+    ]),
+  );
+
+  list.add(
+    Question('José Martí fue a la cárcel por :', [
+      Answer('la matanza de un soldado ', false),
+      Answer('su poesía ', false),
+      Answer('ser acusado de traición  ', true),
+      Answer('haber robado un banco ', false),
+    ]),
+  );
+
+  list.add(
+    Question(
+        'Sus mejores obras están incluidas en "Ismaelillo", dedicado a su :', [
+      Answer('hijo ', true),
+      Answer('padre ', false),
+      Answer('mejor amigo ', false),
+      Answer('hermano menor ', false),
+    ]),
+  );
+  list.add(
+    Question('Se puede describir a José Martí como :', [
+      Answer('Poeta y ensayista', false),
+      Answer('Los tres', true),
+      Answer('Politico y libertador', false),
+      Answer('Periodista y filosofo', false),
+    ]),
+  );
+
+  list.add(
+    Question('José Martí se ganó la vida como representante diplomático de :', [
+      Answer('Cuba, Puerto Rico y La Rep. Dominicana', false),
+      Answer('México, Guatemala y Honduras ', false),
+      Answer('Argentina, Paraguay y Uruguay ', true),
+      Answer('Venezuela, Colombia y Ecuador ', false),
+    ]),
+  );
+
+  list.add(
+    Question('Donde muere Jose Marti ', [
+      Answer('En dos palmas', false),
+      Answer('En Dos Rios', true),
+      Answer('En Islas Canarias', false),
+      Answer('En San Juan Puerto Rico', false),
+    ]),
+  );
+
+  list.add(
+    Question(
+        'José Martí fue considerado uno de los precursores del movimiento :', [
+      Answer('Clásico ', false),
+      Answer('Surrealista ', false),
+      Answer('Modernista ', true),
+      Answer('Impresionista ', false),
+    ]),
+  );
+
+  list.add(
+    Question('En que año muere Jose Marti', [
+      Answer('1895', true),
+      Answer('1900', false),
+      Answer('1890', false),
+      Answer('1860', false),
+    ]),
+  );
+
+  list.add(
+    Question('Como se le conoce a Jose Marti', [
+      Answer('El Apostol ', true),
+      Answer('El Generalisimo', false),
+      Answer('El mas Internacional', false),
+      Answer('El Mayor', false),
+    ]),
+  );
+
+  list.add(
+    Question(
+        '¿En cuál de los poemarios martianos aparece el poema conocido como “La bailarina española”:',
+        [
+          Answer('Versos sencillos', true),
+          Answer('El Ismaelillo', false),
+          Answer('Los zapaticos de rosa', false),
+          Answer('La edad de oro', false),
+        ]),
+  );
+
+  list.add(
+    Question('Como se llamaban los padres de Jose Marti', [
+      Answer('Leonor y Cristobal', false),
+      Answer('Leonor y Mariano', false),
+      Answer('Mariano y Josefa', false),
+      Answer('Leonor y Jose', true),
+    ]),
+  );
+
+  list.add(
+    Question(
+        '¿Cómo se llamaba la calle donde estaba la casa en que nació Martí?:', [
+      Answer('Calle de Paula', true),
+      Answer('Calle de Antonia', false),
+      Answer('Calle Maceo', false),
+      Answer('Calle 23', false),
+    ]),
+  );
+
+  list.add(
+    Question('¿Cómo se llamaba el poeta cubano que fue maestro de Martí?:', [
+      Answer('Julio Antonio Mella', false),
+      Answer('Fermín Valdés Domínguez', false),
+      Answer('Ruben Martinez Villena', false),
+      Answer('Rafael María de Mendive', true),
+    ]),
+  );
+
+  list.add(
+    Question('¿Cuál era el nombre completo de José Martí?:', [
+      Answer('Jose Marti y perez', false),
+      Answer('Jose Alberto Marti y Perez', false),
+      Answer('Jose Marti', false),
+      Answer('José Julián Martí y Pérez', true),
+    ]),
+  );
+
+  list.add(
+    Question('¿En qué país conoció Martí a Manuel Mercado?:', [
+      Answer('En Puerto Rico', false),
+      Answer('España', false),
+      Answer('Rep Dominicana', false),
+      Answer('En México', true),
+    ]),
+  );
+
+  list.add(
+    Question('¿Cuál es el nombre de la única novela que escribió Martí?:', [
+      Answer('Adúltera', false),
+      Answer('Amor con amor se paga', false),
+      Answer('La Edad de Oro', false),
+      Answer('Amistad Funesta', true),
+    ]),
+  );
+
+  list.add(
+    Question('¿En qué país escribió Martí La edad de oro?:', [
+      Answer('En Estados Unidos', true),
+      Answer('México', false),
+      Answer('Colombia', false),
+      Answer('Cuba', false),
+    ]),
+  );
+
+  list.add(
+    Question(
+        '¿En qué país conoció Martí a la joven cubana que luego sería su esposa, Carmen Zayas Bazán?:',
+        [
+          Answer('Cuba', false),
+          Answer('Puerto Rico', false),
+          Answer('España', false),
+          Answer('En México ', true),
+        ]),
+  );
+
+  list.add(
+    Question(
+        '¿A qué poema martiano pertenecen los siguientes versos?: Y pasó el tiempo y pasó Un águila por el mar…:',
+        [
+          Answer('Los zapaticos de rosa', true),
+          Answer('La edad de oro', false),
+          Answer('Ismaelillo', false),
+          Answer('Versos Sencillos', false),
+        ]),
+  );
+
+  list.add(
+    Question('¿Cómo se llamó el unico hijo de Jose Marti?:', [
+      Answer('Julian Marti Zayas-Bazan', false),
+      Answer('Francisco Zayas- Bazan', false),
+      Answer('Pepito Marti y Zayas-Bazan', false),
+      Answer('José Francisco Martí y Zayas-Bazán', true),
+    ]),
+  );
+
+  list.add(
+    Question('''¿En qué obra escribió Martí los siguientes versos?:
+El amor madre a la patria
+No es el amor ridículo a la tierra,
+Ni a la hierba que pisan nuestras plantas;
+Es el odio insensible a quien la oprime,
+Es el rencor eterno a quien la ataca…
+''', [
+      Answer('Los zapaticos de Rosa', false),
+      Answer('La edad de oro', false),
+      Answer('Carta a su Madre', false),
+      Answer('Abdala', true),
+    ]),
+  );
+
+  list.add(
+    Question(
+        '¿Quiénes fueron los hombres que, junto con Martí, asumieron la dirección de la Guerra de 1895?: ',
+        [
+          Answer('Ruben y Mella', false),
+          Answer('Rafael de Mendive y Fermín Valdés Domínguez', false),
+          Answer('Antonio Maceo y Julio Sanguly', false),
+          Answer('Máximo Gómez y Antonio Maceo ', true),
+        ]),
+  );
+
+  list.add(
+    Question(
+        '¿Cómo se llamó el periódico fundado por Martí en los EEUU, 1892?:', [
+      Answer('Patria', true),
+      Answer('Libertad', false),
+      Answer('Cuba libre', false),
+      Answer('Patria o Muerte', false),
+    ]),
+  );
+
+  list.add(
+    Question(
+        '¿Cuál es el nombre de la niña que se crió muy cerca de Martí en los EEUU, y cuya foto él llevaba en el pecho en el momento de morir?: ',
+        [
+          Answer('Maria Betancourt', false),
+          Answer('Pilar', false),
+          Answer('Paula Mantilla', false),
+          Answer('María Mantilla ', true),
+        ]),
+  );
+
+  list.add(
+    Question(
+        '¿Cómo se llama el poemario martiano donde aparece el poema “Musa traviesa”?:',
+        [
+          Answer('La edad de oro', false),
+          Answer('Los zapaticos de rosa', false),
+          Answer('Versos Sencillos', false),
+          Answer('Ismaelillo', true),
+        ]),
+  );
+  list.add(
+    Question(
+        '¿Qué palabra tenía grabada Martí en el anillo de hierro que se mandó a hacer con los restos del grillete que había usado en el presidio en Cuba?:',
+        [
+          Answer('Pepito', false),
+          Answer('José Martí', false),
+          Answer('Ninguna', false),
+          Answer('Cuba', true),
+        ]),
+  );
+
+  list.shuffle();
+  return list;
+}
