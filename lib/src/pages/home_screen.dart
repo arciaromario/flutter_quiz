@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
               const Text(
                 'Conociendo al Apóstol ',
                 style: TextStyle(
-                    fontSize: 35,
+                    fontSize: 30,
                     color: Color.fromARGB(255, 4, 60, 105),
                     fontWeight: FontWeight.bold),
               ),

@@ -21,7 +21,7 @@ class ContactoScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 18)),
               subtitle: const Text(
                 'romarioyla@estudiantes.uci.cu',
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 13),
               ),
               trailing: const Text('Fac: 3'),
             ),
@@ -29,11 +29,11 @@ class ContactoScreen extends StatelessWidget {
           Card(
             child: ListTile(
               leading: Image.asset('assets/gabi.png'),
-              title: const Text('Gabriela Espinisa Mateo',
+              title: const Text('Gabriela Espinosa Mateo',
                   style: TextStyle(fontSize: 18)),
               subtitle: const Text(
                 'gabrielaem@estudiantes.uci.cu',
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 13),
               ),
               trailing: const Text('Fac: FTE'),
             ),
@@ -45,7 +45,7 @@ class ContactoScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 18)),
               subtitle: const Text(
                 'osmelmr@estudiantes.uci.cu',
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 13),
               ),
               trailing: const Text('Fac: FTE'),
             ),

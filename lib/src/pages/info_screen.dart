@@ -19,10 +19,11 @@ class InfoScreen extends StatelessWidget {
               ),
             ),
             Container(
-              width: MediaQuery.of(context).size.width - 10,
+              width: MediaQuery.of(context).size.width - 25,
               child: Text.rich(
                 TextSpan(
-                  text: 'Este es un juego educativo de preguntas y respuestas '
+                  text:
+                      '   Este es un juego educativo de preguntas y respuestas '
                       'donde puedes comprobar tus conocimientos sobre nuestro '
                       'Apóstol nacional a las ves que te diviertes. Una vez '
                       'iniciado el juego tienes 10 preguntas aleatorias que '
@@ -45,12 +46,12 @@ class InfoScreen extends StatelessWidget {
             ),
             Container(
               height: 437,
-              width: MediaQuery.of(context).size.width - 10,
+              width: MediaQuery.of(context).size.width - 25,
               child: SingleChildScrollView(
                 child: Text.rich(
                   TextSpan(
                       text:
-                          ' José Julián Martí Pérez nació en La Habana el 28 de enero del año 1853, '
+                          '   José Julián Martí Pérez nació en La Habana el 28 de enero del año 1853, '
                           ' en el seno de una familia acomodada.  Ya desde temprano tuvo roces con la '
                           ' política y con el gobierno español en la isla por lo que con 16 años fue '
                           ' arrestado por traición y condenado a seis años de prisión, pero gracias'
