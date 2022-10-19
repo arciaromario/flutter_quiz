@@ -26,6 +26,7 @@ class _QuizScreenState extends State<QuizScreen> {
           _questionWidget(),
           _answerList(),
           _nextButton(),
+          _exitButton(),
         ]),
       ),
     );
@@ -38,7 +39,7 @@ class _QuizScreenState extends State<QuizScreen> {
       children: [
         Center(
           child: Text(
-            "Question ${currentQuestionIndex + 1}/${totalquestion.toString()}",
+            "Pregunta ${currentQuestionIndex + 1}/${totalquestion.toString()}",
             style: const TextStyle(
               color: Colors.white,
               fontSize: 20,
@@ -109,11 +110,11 @@ class _QuizScreenState extends State<QuizScreen> {
             if (isLastQuestion) {
               showDialog(context: context, builder: (_) => _showScoreDialog());
               print(totalquestion);
+            } else {
+              setState(() {
+                currentQuestionIndex++;
+              });
             }
-
-            setState(() {
-              currentQuestionIndex++;
-            });
           }
         },
       ),
@@ -164,11 +165,11 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return AlertDialog(
       title: Text(
-        title + " | Score is $score",
+        title + " | Resultado : $score",
         style: TextStyle(color: isPassed ? Colors.green : Colors.redAccent),
       ),
       content: ElevatedButton(
-        child: const Text("Restart"),
+        child: const Text("Reiniciar"),
         onPressed: () {
           Navigator.pop(context);
           setState(() {
@@ -176,6 +177,24 @@ class _QuizScreenState extends State<QuizScreen> {
             score = 0;
             selectedAnswer = null;
           });
+        },
+      ),
+    );
+  }
+
+  _exitButton() {
+    return Container(
+      width: MediaQuery.of(context).size.width * 0.5,
+      height: 48,
+      child: ElevatedButton(
+        child: Text("Salir"),
+        style: ElevatedButton.styleFrom(
+          shape: const StadiumBorder(),
+          primary: Colors.blueAccent,
+          onPrimary: Colors.white,
+        ),
+        onPressed: () {
+          Navigator.pushReplacementNamed(context, 'home');
         },
       ),
     );
